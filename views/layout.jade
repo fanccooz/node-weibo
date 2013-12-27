@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    link(rel="stylesheet", href="/stylesheets/bootstrap.css")
+    link(rel="stylesheets", href="stylesheets/bootstrap-responsive.css")
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle="collapse" data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href="/") Microblog
+          div.nav-collapse
+            ul.nav
+              li.active
+                a(href="/") 首页
+              li
+                a(herf="/login") 登入
+              li
+                a(href="/reg") 注册
+    #container.container
+      block content
+      hr
+      footer
+        p
+          a(href="http://www.byvoid.com/" target="_blank") byvoid
+          \2012
+  script(src="/javascripts/bootstrap.js")
+  script(src="/javascripts/jquery.js")
+
+
+
